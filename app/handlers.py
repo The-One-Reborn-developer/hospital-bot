@@ -47,3 +47,16 @@ async def main(callback: CallbackQuery):
              'Если у вас возникли вопросы, вы можете задать их мне.'
     
     await callback.message.edit_text(answer, reply_markup=kb.main_keyboard())
+
+
+@router.callback_query(F.data == "work_time")
+async def work_time(callback: CallbackQuery):
+    answer = 'Поликлиника: с 08:00 до 15:30 (выходные: суббота, воскресенье).\n' \
+             'Дневной стационар: с 09:00 до 18:00, без выходных.\n' \
+             'Стационар: круглосуточно.\n' \
+             'Консультативно-диагностическое отделение перинатального центра: с 08:00 до 18:00 (выходные: суббота, воскресенье).\n' \
+             'Центр медицинской реабилитации: с 08:00 до 20:00 (выходные: суббота, воскресенье).'
+    
+    await callback.message.edit_text(answer, reply_markup=kb.main_keyboard())
+
+
