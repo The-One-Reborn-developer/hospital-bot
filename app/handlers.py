@@ -51,3 +51,54 @@ async def contacts(callback: CallbackQuery):
     
     await callback.message.edit_text(answer, parse_mode='HTML',
                                      reply_markup=kb.back_keyboard())
+    
+
+@router.callback_query(F.data == "driveway")
+async def driveway(callback: CallbackQuery):
+    with open('app/info/driveway.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.back_keyboard())
+    
+
+@router.callback_query(F.data == "faq")
+async def faq(callback: CallbackQuery):
+    await callback.message.edit_text('Выберите вопрос из списка 🔽',
+                                     reply_markup=kb.faq_keyboard())
+    
+
+@router.callback_query(F.data == "hospitalization_rules")
+async def hospitalization_rules(callback: CallbackQuery):
+    with open('app/info/hospitalization_rules.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.faq_back_keyboard())
+    
+
+@router.callback_query(F.data == "hospitalization_length")
+async def hospitalization_length(callback: CallbackQuery):
+    with open('app/info/hospitalization_length.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.faq_back_keyboard())
+    
+
+@router.callback_query(F.data == "register_rules")
+async def register_rules(callback: CallbackQuery):
+    with open('app/info/register_rules.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.faq_back_keyboard())
+    
+
+@router.callback_query(F.data == "consultation_rules")
+async def consultation_rules(callback: CallbackQuery):
+    with open('app/info/consultation_rules.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.faq_back_keyboard())
