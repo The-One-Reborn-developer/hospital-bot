@@ -59,6 +59,14 @@ def faq_keyboard() -> InlineKeyboardMarkup:
                                      callback_data="consultation_rules")
             ],
             [
+                InlineKeyboardButton(text="Консультация травмотологов-ортопедов",
+                                     callback_data="traumatology_consultation")
+            ],
+            [
+                InlineKeyboardButton(text="О видах медицинской помощи",
+                                     callback_data="about_med_help")
+            ],
+            [
                 InlineKeyboardButton(text="Назад",
                                      callback_data="main")
             ],

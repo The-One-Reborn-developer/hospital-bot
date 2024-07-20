@@ -102,3 +102,21 @@ async def consultation_rules(callback: CallbackQuery):
     
     await callback.message.edit_text(answer, parse_mode='HTML',
                                      reply_markup=kb.faq_back_keyboard())
+    
+
+@router.callback_query(F.data == "traumatology_consultation")
+async def traumatology_consultation(callback: CallbackQuery):
+    with open('app/info/traumatology_consultation.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.faq_back_keyboard())
+    
+
+@router.callback_query(F.data == "about_med_help")
+async def about_med_help(callback: CallbackQuery):
+    with open('app/info/about_med_help.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.faq_back_keyboard())
