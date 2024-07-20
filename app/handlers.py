@@ -38,7 +38,7 @@ async def about(callback: CallbackQuery):
              'безопасность медицинской деятельности» - это результат командной работы и высокая оценка ' \
              'труда всего коллектива.'
     
-    await callback.message.edit_text(answer, reply_markup=kb.about_keyboard())
+    await callback.message.edit_text(answer, reply_markup=kb.back_keyboard())
 
 
 @router.callback_query(F.data == "main")
@@ -57,6 +57,6 @@ async def work_time(callback: CallbackQuery):
              'Консультативно-диагностическое отделение перинатального центра: с 08:00 до 18:00 (выходные: суббота, воскресенье).\n' \
              'Центр медицинской реабилитации: с 08:00 до 20:00 (выходные: суббота, воскресенье).'
     
-    await callback.message.edit_text(answer, reply_markup=kb.main_keyboard())
+    await callback.message.edit_text(answer, reply_markup=kb.back_keyboard())
 
 

@@ -19,7 +19,7 @@ def main_keyboard() -> InlineKeyboardMarkup:
     )
 
 
-def about_keyboard() -> InlineKeyboardMarkup:
+def back_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
         inline_keyboard=[
             [
