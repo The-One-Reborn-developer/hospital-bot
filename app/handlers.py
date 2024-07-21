@@ -309,3 +309,93 @@ async def extraordinary_order_1(callback: CallbackQuery):
     
     await callback.message.edit_text(answer, parse_mode='HTML',
                                      reply_markup=kb.extraordinary_order_1_keyboard())
+    
+
+@router.callback_query(F.data == "extraordinary_order_2")
+async def extraordinary_order_2(callback: CallbackQuery):
+    with open('app/info/extraordinary_order_2.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.extraordinary_order_2_keyboard())
+    
+
+@router.callback_query(F.data == "extraordinary_order_3")
+async def extraordinary_order_3(callback: CallbackQuery):
+    with open('app/info/extraordinary_order_3.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.extraordinary_order_3_keyboard())
+    
+
+@router.callback_query(F.data == "extraordinary_order_4")
+async def extraordinary_order_4(callback: CallbackQuery):
+    with open('app/info/extraordinary_order_4.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.extraordinary_order_4_keyboard())
+    
+
+@router.callback_query(F.data == "extraordinary_order_5")
+async def extraordinary_order_5(callback: CallbackQuery):
+    with open('app/info/extraordinary_order_5.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.extraordinary_order_5_keyboard())
+    
+
+@router.callback_query(F.data == "extraordinary_order_6")
+async def extraordinary_order_6(callback: CallbackQuery):
+    with open('app/info/extraordinary_order_6.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.extraordinary_order_6_keyboard())
+    
+
+@router.callback_query(F.data == "extraordinary_order_7")
+async def extraordinary_order_7(callback: CallbackQuery):
+    with open('app/info/extraordinary_order_7.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.extraordinary_order_7_keyboard())
+    
+
+@router.callback_query(F.data == "extraordinary_order_8")
+async def extraordinary_order_8(callback: CallbackQuery):
+    with open('app/info/extraordinary_order_8.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.extraordinary_order_8_keyboard())
+    
+
+@router.callback_query(F.data == "maternity_hospital")
+async def maternity_hospital(callback: CallbackQuery):
+    with open('app/info/maternity_hospital.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.faq_back_keyboard())
+    
+
+@router.callback_query(F.data == "dermatovenerologist_analysis")
+async def dermatovenerologist_analysis(callback: CallbackQuery):
+    with open('app/info/dermatovenerologist_analysis.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.faq_back_keyboard())
+    
+
+@router.callback_query(F.data == "diagnostic_procedures_1")
+async def diagnostic_procedures_1(callback: CallbackQuery):
+    with open('app/info/diagnostic_procedures_1.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.diagnostic_procedures_1_keyboard())

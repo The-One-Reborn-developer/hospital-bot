@@ -91,6 +91,18 @@ def faq_keyboard() -> InlineKeyboardMarkup:
                                      callback_data="extraordinary_order_1")
             ],
             [
+                InlineKeyboardButton(text="Что взять с собой в роддом?",
+                                     callback_data="maternity_hospital")
+            ],
+            [
+                InlineKeyboardButton(text="Как сдавать анализы дерматовенерологу?",
+                                     callback_data="dermatovenerologist_analysis")
+            ],
+            [
+                InlineKeyboardButton(text="Подготовка к диагностическим процедурам",
+                                     callback_data="diagnostic_procedures_1")
+            ],
+            [
                 InlineKeyboardButton(text="Назад",
                                      callback_data="main")
             ],
@@ -398,6 +410,138 @@ def extraordinary_order_1_keyboard() -> InlineKeyboardMarkup:
             [
                 InlineKeyboardButton(text="Стр. 2 ▶️",
                                      callback_data="extraordinary_order_2")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def extraordinary_order_2_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 1 ◀️",
+                                     callback_data="extraordinary_order_1"),
+                InlineKeyboardButton(text="Стр. 3 ▶️",
+                                     callback_data="extraordinary_order_3")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def extraordinary_order_3_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 2 ◀️",
+                                     callback_data="extraordinary_order_2"),
+                InlineKeyboardButton(text="Стр. 4 ▶️",
+                                     callback_data="extraordinary_order_4")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def extraordinary_order_4_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 3 ◀️",
+                                     callback_data="extraordinary_order_3"),
+                InlineKeyboardButton(text="Стр. 5 ▶️",
+                                     callback_data="extraordinary_order_5")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def extraordinary_order_5_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 4 ◀️",
+                                     callback_data="extraordinary_order_4"),
+                InlineKeyboardButton(text="Стр. 6 ▶️",
+                                     callback_data="extraordinary_order_6")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def extraordinary_order_6_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 5 ◀️",
+                                     callback_data="extraordinary_order_5"),
+                InlineKeyboardButton(text="Стр. 7 ▶️",
+                                     callback_data="extraordinary_order_7")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def extraordinary_order_7_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 6 ◀️",
+                                     callback_data="extraordinary_order_6"),
+                InlineKeyboardButton(text="Стр. 8 ▶️",
+                                     callback_data="extraordinary_order_8")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def extraordinary_order_8_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 7 ◀️",
+                                     callback_data="extraordinary_order_7")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def diagnostic_procedures_1_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 2 ▶️",
+                                     callback_data="diagnostic_procedures_2")
             ],
             [
                 InlineKeyboardButton(text="Назад",
