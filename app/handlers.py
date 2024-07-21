@@ -444,3 +444,48 @@ async def diagnostic_procedures_6(callback: CallbackQuery):
     
     await callback.message.edit_text(answer, parse_mode='HTML',
                                      reply_markup=kb.diagnostic_procedures_6_keyboard())
+    
+
+@router.callback_query(F.data == "diagnostic_procedures_7")
+async def diagnostic_procedures_7(callback: CallbackQuery):
+    with open('app/info/diagnostic_procedures_7.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.diagnostic_procedures_7_keyboard())
+    
+
+@router.callback_query(F.data == "diagnostic_procedures_8")
+async def diagnostic_procedures_8(callback: CallbackQuery):
+    with open('app/info/diagnostic_procedures_8.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.diagnostic_procedures_8_keyboard())
+    
+
+@router.callback_query(F.data == "diagnostic_procedures_9")
+async def diagnostic_procedures_9(callback: CallbackQuery):
+    with open('app/info/diagnostic_procedures_9.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.diagnostic_procedures_9_keyboard())
+    
+
+@router.callback_query(F.data == "diagnostic_procedures_10")
+async def diagnostic_procedures_10(callback: CallbackQuery):
+    with open('app/info/diagnostic_procedures_10.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.diagnostic_procedures_10_keyboard())
+    
+
+@router.callback_query(F.data == "diagnostic_procedures_11")
+async def diagnostic_procedures_11(callback: CallbackQuery):
+    with open('app/info/diagnostic_procedures_11.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.diagnostic_procedures_11_keyboard())

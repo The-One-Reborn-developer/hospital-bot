@@ -636,6 +636,91 @@ def diagnostic_procedures_6_keyboard() -> InlineKeyboardMarkup:
     )
 
 
+def diagnostic_procedures_7_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 6 ◀️",
+                                     callback_data="diagnostic_procedures_6"),
+                InlineKeyboardButton(text="Стр. 8 ▶️",
+                                     callback_data="diagnostic_procedures_8")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def diagnostic_procedures_8_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 7 ◀️",
+                                     callback_data="diagnostic_procedures_7"),
+                InlineKeyboardButton(text="Стр. 9 ▶️",
+                                     callback_data="diagnostic_procedures_9")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def diagnostic_procedures_9_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 8 ◀️",
+                                     callback_data="diagnostic_procedures_8"),
+                InlineKeyboardButton(text="Стр. 10 ▶️",
+                                     callback_data="diagnostic_procedures_10")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def diagnostic_procedures_10_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 9 ◀️",
+                                     callback_data="diagnostic_procedures_9"),
+                InlineKeyboardButton(text="Стр. 11 ▶️",
+                                     callback_data="diagnostic_procedures_11")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def diagnostic_procedures_11_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 10 ◀️",
+                                     callback_data="diagnostic_procedures_10"),
+                InlineKeyboardButton(text="Стр. 12 ▶️",
+                                     callback_data="diagnostic_procedures_12")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
 def faq_back_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
         inline_keyboard=[
