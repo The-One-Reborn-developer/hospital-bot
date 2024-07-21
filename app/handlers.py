@@ -186,7 +186,7 @@ async def health_protection_1(callback: CallbackQuery):
     
 
 @router.callback_query(F.data == "health_protection_2")
-async def health_protection_1(callback: CallbackQuery):
+async def health_protection_2(callback: CallbackQuery):
     with open('app/info/health_protection_2.txt', 'r', encoding='utf-8') as file:
         answer = file.read()
     
@@ -195,9 +195,36 @@ async def health_protection_1(callback: CallbackQuery):
 
 
 @router.callback_query(F.data == "health_protection_3")
-async def health_protection_1(callback: CallbackQuery):
+async def health_protection_3(callback: CallbackQuery):
     with open('app/info/health_protection_3.txt', 'r', encoding='utf-8') as file:
         answer = file.read()
     
     await callback.message.edit_text(answer, parse_mode='HTML',
                                      reply_markup=kb.health_protection_3_keyboard())
+
+
+@router.callback_query(F.data == "health_protection_4")
+async def health_protection_4(callback: CallbackQuery):
+    with open('app/info/health_protection_4.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.health_protection_4_keyboard())
+    
+
+@router.callback_query(F.data == "health_protection_5")
+async def health_protection_5(callback: CallbackQuery):
+    with open('app/info/health_protection_5.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.health_protection_5_keyboard())
+    
+
+@router.callback_query(F.data == "health_protection_6")
+async def health_protection_6(callback: CallbackQuery):
+    with open('app/info/health_protection_6.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.health_protection_6_keyboard())

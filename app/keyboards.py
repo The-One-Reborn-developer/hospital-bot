@@ -216,6 +216,57 @@ def health_protection_3_keyboard() -> InlineKeyboardMarkup:
     )
 
 
+def health_protection_4_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 3 ◀️",
+                                     callback_data="health_protection_3"),
+                InlineKeyboardButton(text="Стр. 5 ▶️",
+                                     callback_data="health_protection_5")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def health_protection_5_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 4 ◀️",
+                                     callback_data="health_protection_4"),
+                InlineKeyboardButton(text="Стр. 6 ▶️",
+                                     callback_data="health_protection_6")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def health_protection_6_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 5 ◀️",
+                                     callback_data="health_protection_5"),
+                InlineKeyboardButton(text="Стр. 7 ▶️",
+                                     callback_data="health_protection_7")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
 def faq_back_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
         inline_keyboard=[
