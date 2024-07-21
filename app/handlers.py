@@ -228,3 +228,21 @@ async def health_protection_6(callback: CallbackQuery):
     
     await callback.message.edit_text(answer, parse_mode='HTML',
                                      reply_markup=kb.health_protection_6_keyboard())
+
+
+@router.callback_query(F.data == "health_protection_7")
+async def health_protection_7(callback: CallbackQuery):
+    with open('app/info/health_protection_7.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.health_protection_7_keyboard())
+    
+
+@router.callback_query(F.data == "health_protection_8")
+async def health_protection_8(callback: CallbackQuery):
+    with open('app/info/health_protection_8.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.health_protection_8_keyboard())
