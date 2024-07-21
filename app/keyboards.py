@@ -79,6 +79,18 @@ def faq_keyboard() -> InlineKeyboardMarkup:
                                      callback_data="health_protection_1")
             ],
             [
+                InlineKeyboardButton(text="Порядок признания лица инвалидом",
+                                     callback_data="disabled")
+            ],
+            [
+                InlineKeyboardButton(text="Правила внутреннего распорядка стационара",
+                                     callback_data="stationary_rules_1")
+            ],
+            [
+                InlineKeyboardButton(text="О медпомощи во внеочередном порядке",
+                                     callback_data="extraordinary_order_1")
+            ],
+            [
                 InlineKeyboardButton(text="Назад",
                                      callback_data="main")
             ],
@@ -290,6 +302,102 @@ def health_protection_8_keyboard() -> InlineKeyboardMarkup:
             [
                 InlineKeyboardButton(text="Стр. 7 ◀️",
                                      callback_data="health_protection_7")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def stationary_rules_1_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 2 ▶️",
+                                     callback_data="stationary_rules_2")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def stationary_rules_2_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 1 ◀️",
+                                     callback_data="stationary_rules_1"),
+                InlineKeyboardButton(text="Стр. 3 ▶️",
+                                     callback_data="stationary_rules_3")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def stationary_rules_3_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 2 ◀️",
+                                     callback_data="stationary_rules_2"),
+                InlineKeyboardButton(text="Стр. 4 ▶️",
+                                     callback_data="stationary_rules_4")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def stationary_rules_4_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 3 ◀️",
+                                     callback_data="stationary_rules_3"),
+                InlineKeyboardButton(text="Стр. 5 ▶️",
+                                     callback_data="stationary_rules_5")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def stationary_rules_5_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 4 ◀️",
+                                     callback_data="stationary_rules_4")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def extraordinary_order_1_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 2 ▶️",
+                                     callback_data="extraordinary_order_2")
             ],
             [
                 InlineKeyboardButton(text="Назад",

@@ -10,7 +10,7 @@ router = Router()
 
 @router.message(CommandStart())
 async def echo(message: Message):
-    answer = 'Приветствую! Я чат-бот Белгородской областной клинической ' \
+    answer = 'Приветствую! Я — чат-бот Белгородской областной клинической ' \
              'больницы Святителя Иоасафа. ' \
              'Если у вас возникли вопросы, вы можете задать их мне.'
     
@@ -246,3 +246,66 @@ async def health_protection_8(callback: CallbackQuery):
     
     await callback.message.edit_text(answer, parse_mode='HTML',
                                      reply_markup=kb.health_protection_8_keyboard())
+    
+
+@router.callback_query(F.data == "disabled")
+async def disabled(callback: CallbackQuery):
+    with open('app/info/disabled.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.faq_back_keyboard())
+    
+
+@router.callback_query(F.data == "stationary_rules_1")
+async def stationary_rules_1(callback: CallbackQuery):
+    with open('app/info/stationary_rules_1.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.stationary_rules_1_keyboard())
+    
+
+@router.callback_query(F.data == "stationary_rules_2")
+async def stationary_rules_2(callback: CallbackQuery):
+    with open('app/info/stationary_rules_2.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.stationary_rules_2_keyboard())
+    
+
+@router.callback_query(F.data == "stationary_rules_3")
+async def stationary_rules_3(callback: CallbackQuery):
+    with open('app/info/stationary_rules_3.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.stationary_rules_3_keyboard())
+    
+
+@router.callback_query(F.data == "stationary_rules_4")
+async def stationary_rules_4(callback: CallbackQuery):
+    with open('app/info/stationary_rules_4.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.stationary_rules_4_keyboard())
+    
+
+@router.callback_query(F.data == "stationary_rules_5")
+async def stationary_rules_5(callback: CallbackQuery):
+    with open('app/info/stationary_rules_5.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.stationary_rules_5_keyboard())
+    
+
+@router.callback_query(F.data == "extraordinary_order_1")
+async def extraordinary_order_1(callback: CallbackQuery):
+    with open('app/info/extraordinary_order_1.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.extraordinary_order_1_keyboard())
