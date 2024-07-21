@@ -67,8 +67,150 @@ def faq_keyboard() -> InlineKeyboardMarkup:
                                      callback_data="about_med_help")
             ],
             [
+                InlineKeyboardButton(text="О недопустимости отказа в мед. помощи",
+                                     callback_data="med_help_availability")
+            ],
+            [
+                InlineKeyboardButton(text="Права и обязанности застрахованных лиц",
+                                     callback_data="rights_and_duties_1")
+            ],
+            [
+                InlineKeyboardButton(text="Права и обязанности в здравоохранении",
+                                     callback_data="health_protection_1")
+            ],
+            [
                 InlineKeyboardButton(text="Назад",
                                      callback_data="main")
+            ],
+        ]
+    )
+
+
+def rights_and_duties_1_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 2 ▶️",
+                                     callback_data="rights_and_duties_2")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def rights_and_duties_2_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 1 ◀️",
+                                     callback_data="rights_and_duties_1"),
+                InlineKeyboardButton(text="Стр. 3 ▶️",
+                                     callback_data="rights_and_duties_3")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def rights_and_duties_3_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 2 ◀️",
+                                     callback_data="rights_and_duties_2"),
+                InlineKeyboardButton(text="Стр. 4 ▶️",
+                                     callback_data="rights_and_duties_4")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def rights_and_duties_4_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 3 ◀️",
+                                     callback_data="rights_and_duties_3"),
+                InlineKeyboardButton(text="Стр. 5 ▶️",
+                                     callback_data="rights_and_duties_5")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def rights_and_duties_5_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 4 ◀️",
+                                     callback_data="rights_and_duties_4")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def health_protection_1_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 2 ▶️",
+                                     callback_data="health_protection_2")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def health_protection_2_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 1 ◀️",
+                                     callback_data="health_protection_1"),
+                InlineKeyboardButton(text="Стр. 3 ▶️",
+                                     callback_data="health_protection_3")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
+            ],
+        ]
+    )
+
+
+def health_protection_3_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Стр. 2 ◀️",
+                                     callback_data="health_protection_2"),
+                InlineKeyboardButton(text="Стр. 4 ▶️",
+                                     callback_data="health_protection_4")
+            ],
+            [
+                InlineKeyboardButton(text="Назад",
+                                     callback_data="faq")
             ],
         ]
     )

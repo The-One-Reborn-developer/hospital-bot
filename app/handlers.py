@@ -120,3 +120,84 @@ async def about_med_help(callback: CallbackQuery):
     
     await callback.message.edit_text(answer, parse_mode='HTML',
                                      reply_markup=kb.faq_back_keyboard())
+    
+
+@router.callback_query(F.data == "med_help_availability")
+async def med_help_availability(callback: CallbackQuery):
+    with open('app/info/med_help_availability.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.faq_back_keyboard())
+    
+
+@router.callback_query(F.data == "rights_and_duties_1")
+async def rights_and_duties(callback: CallbackQuery):
+    with open('app/info/rights_and_duties_1.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.rights_and_duties_1_keyboard())
+    
+
+@router.callback_query(F.data == "rights_and_duties_2")
+async def rights_and_duties_2(callback: CallbackQuery):
+    with open('app/info/rights_and_duties_2.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.rights_and_duties_2_keyboard())
+    
+
+@router.callback_query(F.data == "rights_and_duties_3")
+async def rights_and_duties_3(callback: CallbackQuery):
+    with open('app/info/rights_and_duties_3.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.rights_and_duties_3_keyboard())
+    
+
+@router.callback_query(F.data == "rights_and_duties_4")
+async def rights_and_duties_4(callback: CallbackQuery):
+    with open('app/info/rights_and_duties_4.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.rights_and_duties_4_keyboard())
+    
+
+@router.callback_query(F.data == "rights_and_duties_5")
+async def rights_and_duties_5(callback: CallbackQuery):
+    with open('app/info/rights_and_duties_5.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.rights_and_duties_5_keyboard())
+    
+
+@router.callback_query(F.data == "health_protection_1")
+async def health_protection_1(callback: CallbackQuery):
+    with open('app/info/health_protection_1.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.health_protection_1_keyboard())
+    
+
+@router.callback_query(F.data == "health_protection_2")
+async def health_protection_1(callback: CallbackQuery):
+    with open('app/info/health_protection_2.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.health_protection_2_keyboard())
+
+
+@router.callback_query(F.data == "health_protection_3")
+async def health_protection_1(callback: CallbackQuery):
+    with open('app/info/health_protection_3.txt', 'r', encoding='utf-8') as file:
+        answer = file.read()
+    
+    await callback.message.edit_text(answer, parse_mode='HTML',
+                                     reply_markup=kb.health_protection_3_keyboard())
