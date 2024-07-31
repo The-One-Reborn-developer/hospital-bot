@@ -17,4 +17,6 @@ A TG bot for getting information about the hospital and its services.
 
 ## INSTALLATION
 
+```bash
 pip install -r requirements.txt
+``
