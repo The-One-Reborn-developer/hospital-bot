@@ -1,6 +1,6 @@
 # Hospital Bot
 
-A TG bot for getting information about the hospital and its services.
+A [TG bot](https://t.me/bokb_info_bot) for getting information about the hospital and its services.
 
 ## FEATURES
 
